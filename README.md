@@ -3,15 +3,15 @@ lovelace-remote-card
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/custom-components/hacs)
 
-这是一个通用的电视(机顶盒)遥控器卡片, 可以自定义设置额外的按钮
+This is a universal TV (set-top box) remote control card that can be customized with extra buttons
 
-![slider-entity-row](https://raw.githubusercontent.com/fineemb/lovelace-remote-card/d6561e8724a15359ef5044478a3b2346c37ae4cb/01.gif)
+![slider-entity-row](01.gif)
 
-## 使用
+## Usage
 
-!> 注意：只支持script
+!> Note: only supported script
 
-增加这个卡片到你的Yaml或者UI编辑器
+Add this card to your Yaml or UI editor
 ```yaml
 type: 'custom:lovelace-remote-card'
 vibrate: true
@@ -41,7 +41,7 @@ right_buttons:
     icon: 'mdi:volume-plus'
 ```
 
-小米电视遥控
+Xiaomi TV Remote Control
 ```yaml
 type: 'custom:lovelace-remote-card'
 vibrate: true
@@ -104,17 +104,18 @@ right_buttons:
       command: volumeup
       entity_id: remote.xiao_mi_dian_shi
 ```
-## 属性
+## Attributes
 
-> 注意：只支持script
+> 
+Note: only supported script
 
 - `circle`
-  * `up` 上 
-  * `down` 下
-  * `left` 左
-  * `right` 右
-  * `ok` 确认
-- `right_buttons` 右侧按钮支持`script` 可以添加任意数量,但是建议在6或者8个,为的是UI的和谐. 格式严格按照示例
-- `bottom_buttons` 底部按钮支持`script` 可以添加任意数量,但是建议在6或者8个,为的是UI的和谐. 格式严格按照示例
-- `vibrate` (选项)设置按钮震动反馈是否开启True/False
-- `entity` (选项) 可以指定设备的追踪ID,一般是路由器追踪,判断电视是否在线
+  * `up` 
+  * `down`
+  * `left`
+  * `right`
+  * `ok`
+- `right_buttons` Right button supports `script` Any number can be added, but 6 or 8 are recommended for UI harmony. The format is strictly according to the example
+- `bottom_buttons` The bottom button supports `script`, you can add any number, but it is recommended to have 6 or 8, for the harmony of the UI. The format is strictly according to the example
+- `vibrate` (Option) Set whether the button vibration feedback is enabled True/False
+- `entity` (Option) You can specify the tracking ID of the device, usually router tracking, to determine whether the TV is online
